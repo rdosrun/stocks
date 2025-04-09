@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const dataList = document.getElementById("data-list");
 
-    fetch("http://cors.io/?https://gamma-api.polymarket.com/markets/501011")
+    fetch("https://crossorigin.me/https://gamma-api.polymarket.com/markets/501011")
         .then(response => {
             if (!response.ok) {
                 throw new Error("Network response was not ok");
