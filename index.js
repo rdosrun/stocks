@@ -2,7 +2,7 @@ var x;
 document.addEventListener("DOMContentLoaded", () => {
     const dataList = document.getElementById("data-list");
 
-    fetch("https://api.cors.lol/?url=https://gamma-api.polymarket.com/markets/501011")
+    fetch("https://corsproxy.io/?url=https://gamma-api.polymarket.com/markets/501011")
         .then(response => {
             console.log(response);
             x =response;
