@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.log(data);
                 x=data;
                 const listItem = document.createElement("li");
-                listItem.textContent = data || "Unnamed Item"; // Replace 'name' with the actual property
+                listItem.textContent = data.discription || "Unnamed Item"; // Replace 'name' with the actual property
                 dataList.appendChild(listItem);
         })
         .catch(error => {
