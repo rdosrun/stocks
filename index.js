@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
             // Assuming the API returns an array of items
+                console.log(data);
+                x=data;
                 const listItem = document.createElement("li");
                 listItem.textContent = data || "Unnamed Item"; // Replace 'name' with the actual property
                 dataList.appendChild(listItem);
