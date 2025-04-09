@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const dataList = document.getElementById("data-list");
 
-    fetch("https://crossorigin.me/https://gamma-api.polymarket.com/markets/501011")
+    fetch("https://api.cors.lol/?url=https://gamma-api.polymarket.com/markets/501011")
         .then(response => {
             console.log(response);
             if (!response.ok) {
