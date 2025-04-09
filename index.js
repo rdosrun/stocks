@@ -1,9 +1,11 @@
+var x;
 document.addEventListener("DOMContentLoaded", () => {
     const dataList = document.getElementById("data-list");
 
     fetch("https://api.cors.lol/?url=https://gamma-api.polymarket.com/markets/501011")
         .then(response => {
             console.log(response);
+            x =response;
             if (!response.ok) {
                 throw new Error("Network response was not ok");
             }
