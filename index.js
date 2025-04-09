@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             // Assuming the API returns an array of items
                 const listItem = document.createElement("li");
-                listItem.textContent = response || "Unnamed Item"; // Replace 'name' with the actual property
+                listItem.textContent = data || "Unnamed Item"; // Replace 'name' with the actual property
                 dataList.appendChild(listItem);
         })
         .catch(error => {
