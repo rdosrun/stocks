@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const dataList = document.getElementById("data-list");
 
-    fetch("https://gamma-api.polymarket.com")
+    fetch("https://gamma-api.polymarket.com/markets/501011")
         .then(response => {
             if (!response.ok) {
                 throw new Error("Network response was not ok");
