@@ -30,6 +30,8 @@ h1 {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    max-height: 600px; /* Set maximum height */
+    overflow-y: auto;  /* Enable vertical scrolling */
 }
 
 #data-list li {
